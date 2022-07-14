@@ -59,13 +59,13 @@ importers:
       typescript: 4.7.4
       vite: 2.9.10
 
-  apps/coolify:
-    specifiers: {}
-
-  apps/coollabs:
-    specifiers: {}
-
   packages/configurations:
+    specifiers: {}
+
+  pages/coolify:
+    specifiers: {}
+
+  pages/coollabs:
     specifiers: {}
 
 packages:
