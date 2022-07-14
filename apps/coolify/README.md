@@ -1,0 +1,1 @@
+# Coolify landing page

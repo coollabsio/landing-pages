@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+	--toastBackground: rgba(41, 37, 36, 0.8);
+	--toastProgressBackground: transparent;
+	--toastFont: 'Montserrat';
+}
+html {
+    font-family: Montserrat;
+}
+body {
+    @apply min-h-screen bg-coolblack text-white;
+}
+main {
+    min-height: calc(100vh - 120px);
+}
+
+input {
+	@apply text-sm rounded py-2 px-6 font-bold bg-warmGray-800 text-white transition duration-150 outline-none border border-transparent !important;
+}
+input:hover,
+input:focus-visible,
+input:focus {
+	@apply bg-warmGray-700 !important;
+}
+label {
+	@apply text-left text-base font-bold text-warmGray-400 !important;
+}
+.gradient {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+    border-image-slice: 1;
+}
+
+._toastMsg {
+	@apply text-sm font-bold !important;
+}
+._toastItem {
+	@apply w-full border-l-2 border-green-600 !important;
+}
+._toastBtn {
+	@apply text-xs !important;
+}
+._toastBtn:hover {
+	@apply bg-gray-500 !important;
+}
+.navbar-link{
+    @apply mx-2 cursor-pointer text-white px-2 rounded transition duration-100 tracking-tight font-bold;
+}
+.navbar-link:hover {
+    @apply bg-coolgray;
+}
+
+button {
+	@apply outline-none !important;
+}
+.button {
+	@apply rounded text-sm font-bold transition-all duration-100 !important;
+}
+
+.button:focus-visible,
+.button:focus {
+	@apply bg-warmGray-700 !important;
+}
